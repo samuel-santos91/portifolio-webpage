@@ -1,0 +1,113 @@
+@import "./styles";
+@import "./mediaQueries";
+
+.header {
+  @include positionFixedTop;
+  @include blurredBackground;
+  @include displayFlex(space-between, none);
+  @include logoHeader(1rem);
+  @include mediaHeader();
+  z-index: 1;
+  width: 100%;
+  padding: 1rem 0;
+  .resume {
+    font-family: $futuristic;
+    animation: fadein 1.6s ease-in;
+    @include displayFlex(none, center);
+    @include resumeButton(1rem);
+    a {
+      color: $green-logo;
+    }
+    @include mediaHeaderResume();
+  }
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.footer {
+  @include positionFixedBottom;
+  @include blurredBackground;
+  @include mediaFooter();
+  z-index: 1;
+  width: 100%;
+  .icons-section {
+    @include displayFlex(space-evenly, none);
+    .icons {
+      padding: 1rem;
+      a {
+        color: $regular-text;
+        svg {
+          &:hover {
+            fill: $green-logo;
+          }
+        }
+      }
+    }
+    .iconx {
+      padding: 1rem;
+      a {
+        color: $regular-text;
+        svg {
+          &:hover {
+            stroke: $green-logo;
+          }
+        }
+      }
+    }
+    .home {
+      animation: translate 0.4s ease-in;
+    }
+    .about {
+      animation: translate 0.6s ease-in;
+    }
+    .projects {
+      animation: translate 0.8s ease-in;
+    }
+    .contact {
+      animation: translate 1s ease-in;
+    }
+    @keyframes translate {
+      0% {
+        transform: translateY(5rem);
+        opacity: 0;
+      }
+      50% {
+        transform: translateY(3rem);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.visibleH {
+  top: 0;
+  transition: top 0.4s ease-out;
+}
+
+.hiddenH {
+  top: -80px;
+  transition: top 0.4s ease-out;
+}
+
+.visibleF {
+  bottom: 0;
+  transition: bottom 0.4s ease-out;
+}
+
+.hiddenF {
+  bottom: -80px;
+  transition: bottom 0.4s ease-out;
+}

@@ -1,0 +1,169 @@
+@import "./styles";
+
+/// HEADER SECTION
+@mixin mediaNav() {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+/// MOBILE HEADER SECTION
+@mixin mediaHeader() {
+  @media (min-width: 769px) { 
+    display: none;
+  }
+}
+@mixin mediaHeaderResume() {
+  @media (max-width: 472px) {
+    padding: 0.3rem 0.8rem;
+  }
+}
+@mixin mediaFooter() {
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+/// INTRO SECTION
+@mixin mediaInfo() {
+  @media (max-width: 913px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 683px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 472px) {
+    font-size: 1.5rem;
+  }
+}
+
+/// ABOUT SECTION
+@mixin mediaSectionContent() {
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    padding: 60px 0;
+    margin: 0;
+  }
+}
+@mixin mediaImageIcons() {
+  @media (max-width: 768px) {
+    margin: auto;
+  }
+}
+@mixin mediaIconUl() {
+  @media (max-width: 768px) {
+    margin: 2rem 0 2rem 0;
+  }
+}
+@mixin mediaPicture() {
+  @media (max-width: 900px) {
+    width: 13rem;
+    height: 13rem;
+  }
+  @media (max-width: 768px) {
+    margin: 3rem 0 0 0;
+    width: 17rem;
+    height: 17rem;
+    margin-top: 3.7rem;
+    margin-left: -0.71rem;
+  }
+  @media (max-width: 480px) {
+    width: 14rem;
+    height: 14rem;
+  }
+}
+@mixin mediaAvatar() {
+  @media (max-width: 900px) {
+    width: 13rem;
+    height: 13rem;
+    margin: 0 2rem 2rem 0;
+  }
+  @media (max-width: 768px) {
+    margin: 3rem 0 0 0;
+    width: 17rem;
+    height: 17rem;
+  }
+  @media (max-width: 480px) {
+    width: 14rem;
+    height: 14rem;
+  }
+}
+@mixin mediaText() {
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+/// PROJECTS SECTION
+@mixin mediaAppName() {
+  @media (max-width: 768px) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@mixin mediaAppItem() {
+  @media (max-width: 768px) {
+    @include displayFlex(none, center);
+    flex-direction: column;
+    margin-left: 0;
+  }
+  @media (max-width: 450px) {
+    width: 100%;
+  }
+}
+@mixin mediaItemTitle {
+  @media (max-width: 1000px) {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+}
+@mixin mediaItemDescription() {
+  @media (max-width: 1000px) {
+    margin-top: 0.5rem;
+  }
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+@mixin mediaMadeWith() {
+  @media (max-width: 768px) {
+    margin: 0;
+  }
+}
+@mixin mediaItemIcons() {
+  @media (max-width: 1000px) {
+    margin-top: 1rem;
+  }
+}
+@mixin mediaItemImg() {
+  @media (max-width: 1000px) {
+    width: 21rem;
+    height: 14rem;
+  }
+  @media (max-width: 768px) {
+    width: 24rem;
+    height: 16rem;
+  }
+  @media (max-width: 450px) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/// CONTACT SECTION
+@mixin mediaTextSection() {
+  @media (max-width: 570px) {
+    width: 100%;
+  }
+}
+@mixin mediaContactIcons() {
+  @media (max-width: 768px) {
+    margin: 2rem 0 2rem 0;
+  }
+}

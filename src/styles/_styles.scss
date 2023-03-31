@@ -1,0 +1,160 @@
+//COLOURS
+$green-logo: rgb(13, 220, 151);
+$green-logo-hover: rgb(167, 247, 220, 0.2);
+$animation-logo-background: rgb(15, 17, 28);
+$site-background: rgb(23, 26, 42);
+$site-background-transparent: rgb(23, 26, 42, 0.9);
+$highlight-text: rgb(165, 164, 164);
+$regular-text: white;
+
+//FONTS
+$arty: "Delicious Handrawn", cursive;
+$futuristic: "Orbitron", sans-serif;
+
+//LOGO
+@mixin stroke() {
+  stroke: $green-logo;
+  stroke-dasharray: 210;
+  stroke-dashoffset: 210;
+}
+@mixin logoHeader($margin-left) {
+  .logo-section {
+    a {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-left: $margin-left;
+      svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: none;
+        &:hover {
+          fill: $green-logo-hover;
+        }
+        circle {
+          stroke: $green-logo;
+        }
+        text {
+          stroke: $green-logo;
+          fill: $green-logo;
+          font-size: 3.5rem;
+        }
+      }
+    }
+  }
+}
+
+//BLURRED BACKGROUND HEADERS
+@mixin blurredBackground() {
+  background-color: $site-background-transparent;
+  backdrop-filter: blur(2px);
+}
+
+//PADDINGS
+$between-sections: 100px 0;
+
+//MARGINS
+$top-section: 4rem 0;
+
+//POSITION
+@mixin positionFixedTop() {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+@mixin positionFixedBottom() {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+//DISPLAY
+@mixin displayFlex($just, $align) {
+  display: flex;
+  justify-content: $just;
+  align-items: $align;
+}
+
+//BUTTONS
+@mixin buttonStyle() {
+  border: $green-logo 1px solid;
+  border-radius: 5px;
+  color: $green-logo;
+  transition: transform 0.4s;
+  &:hover {
+    background-color: $green-logo-hover;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+@mixin resumeButton($margin-right) {
+  margin-right: $margin-right;
+  padding: 0.7rem 1.5rem;
+  @include buttonStyle();
+}
+@mixin sendEmailButton() {
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  @include buttonStyle();
+}
+
+//LINE SPACE
+$space-between-lines: 1.3;
+
+//IMAGE SIZE
+@mixin imageSize() {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 10px;
+}
+
+//SECTIONS
+@mixin sectionTitle() {
+  .section-title {
+    @include displayFlex(flex-start, center);
+    .section {
+      font-size: 1.8rem;
+      color: $regular-text;
+      margin: 0;
+      white-space: nowrap;
+    }
+    hr {
+      width: 100%;
+      margin-left: 1rem;
+      border-style: solid;
+      color: $highlight-text;
+      border-width: 0.1px;
+      height: 0;
+    }
+  }
+}
+@mixin sectionDisplay() {
+  display: flex;
+  flex-direction: column;
+  padding: $between-sections;
+}
+
+//SOCIAL MEDIA (AND WEB) ICONS
+@mixin iconTag($transform) {
+  a {
+    svg {
+      fill: $highlight-text;
+      transition: transform 0.7s;
+      &:hover {
+        fill: $green-logo;
+        transform: $transform;
+      }
+    }
+  }
+}
+@mixin iconWebTag() {
+  a {
+    svg {
+      stroke: $highlight-text;
+      transition: transform 0.7s;
+      &:hover {
+        stroke: $green-logo;
+        transform: scale(1.1);
+      }
+    }
+  }
+}

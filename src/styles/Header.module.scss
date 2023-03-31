@@ -1,0 +1,97 @@
+@import "./styles";
+@import "./mediaQueries";
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  @include blurredBackground;
+  @include positionFixedTop;
+  @include displayFlex(space-between, center);
+  @include logoHeader(none);
+  font-size: 0.9rem;
+  width: 100%;
+  padding: 1rem 3rem;
+  z-index: 1;
+  .nav {
+    @include displayFlex(none, center);
+    width: 30rem;
+    padding-right: 3rem;
+    font-family: $futuristic;
+    .options {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      width: 20rem;
+      li {
+        margin: 0 2rem;
+        width: 2rem;
+        @include displayFlex(center, none);
+        a {
+          color: $regular-text;
+          &:hover {
+            color: $green-logo;
+          }
+        }
+      }
+      .about {
+        animation: translate 0.6s ease-in;
+      }
+      .projects {
+        animation: translate 0.8s ease-in;
+      }
+      .contact {
+        animation: translate 1s ease-in;
+      }
+      @keyframes translate {
+        0% {
+          transform: translateY(-5rem);
+          opacity: 0;
+        }
+        50% {
+          transform: translateY(-3rem);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
+    .resume {
+      @include resumeButton(none);
+      animation: fadein 1.6s ease-in;
+      a {
+        color: $green-logo;
+      }
+    }
+    @keyframes fadein {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  @include mediaNav();
+}
+
+.visible {
+  top: 0;
+  transition: top 0.4s ease-out;
+}
+
+.hidden {
+  top: -80px;
+  transition: top 0.4s ease-out;
+}

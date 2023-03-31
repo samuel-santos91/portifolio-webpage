@@ -1,0 +1,43 @@
+@import "./styles";
+@import "./mediaQueries";
+
+.contact {
+  @include sectionDisplay();
+  @include sectionTitle();
+
+  .say-hello {
+    @include displayFlex(none, center);
+    flex-direction: column;
+    margin: $top-section;
+    h3 {
+      font-size: 1.5rem;
+      color: $regular-text;
+    }
+    p {
+      width: 26rem;
+      text-align: center;
+      color: $highlight-text;
+      line-height: $space-between-lines;
+      @include mediaTextSection();
+      .highlight {
+        color: $green-logo;
+      }
+    }
+    .email-link {
+      font-family: $futuristic;
+      @include sendEmailButton();
+    }
+    .icons {
+      ul {
+        @include displayFlex(center, none);
+        list-style: none;
+        padding: 0;
+        @include mediaContactIcons();
+        li {
+          margin: 0 1rem;
+          @include iconTag(translate(0, -7px));
+        }
+      }
+    }
+  }
+}

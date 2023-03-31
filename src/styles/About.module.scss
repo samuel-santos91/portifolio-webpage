@@ -1,0 +1,83 @@
+@import "./styles";
+@import "./mediaQueries";
+
+.about {
+  @include sectionDisplay();
+  @include sectionTitle();
+
+  .section-content {
+    @include displayFlex(center, flex-start);
+    @include mediaSectionContent();
+    margin: $top-section;
+    .image-and-icons {
+      display: flex;
+      flex-direction: column;
+      @include mediaImageIcons();
+      .icons {
+        ul {
+          @include displayFlex(center, none);
+          @include mediaIconUl();
+          margin-right: 5rem;
+          list-style: none;
+          padding: 0;
+          li {
+            margin: 0 1rem;
+            @include iconTag(translate(0, -7px));
+          }
+        }
+      }
+      .picture {
+        @include imageSize();
+        @include mediaPicture();
+        opacity: 0.8;
+        object-fit: cover;
+        position: absolute;
+        margin-top: 0.71rem;
+        margin-left: -0.71rem;
+      }
+
+      .avatar {
+        @include imageSize();
+        @include mediaAvatar();
+        margin: 0 5rem 2rem 0;
+        box-shadow: -10px 10px 10px rgb(0, 0, 0), -12px 12px $highlight-text;
+        position: relative;
+        transition: opacity 0.7s ease-out;
+        &:hover {
+          opacity: 0;
+        }
+      }
+    }
+
+    .text {
+      color: $highlight-text; 
+      width: 30rem;
+      line-height: $space-between-lines;
+      @include mediaText();
+      p {
+        margin-top: 0;
+      }
+      .highlight {
+        color: $green-logo;
+      }
+      .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0;
+        font-family: $futuristic;
+        @media (max-width: 500px) {
+          grid-template-columns: 1fr 1fr;
+        }
+        li {
+          margin: 0.2rem 0;
+          list-style: none;
+          &::before {
+            content: "•";
+            color: $green-logo;
+            margin: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import "./styles";
+@import "./mediaQueries";
+
+.projects {
+  @include sectionDisplay();
+  @include sectionTitle();
+
+  .app-name {
+    @include displayFlex(space-around, none);
+    @include mediaAppName();
+    margin: $top-section;
+    .item {
+      line-height: $space-between-lines;
+      width: 22rem;
+      margin-left: 1rem;
+      @include mediaAppItem();
+      .title {
+        color: $regular-text;
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        white-space: nowrap;
+        @include mediaItemTitle();
+      }
+      .description {
+        color: $highlight-text;
+        @include mediaItemDescription();
+      }
+      .made-with {
+        color: $green-logo;
+        font-family: $futuristic;
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        @include mediaMadeWith();
+        li {
+          margin-right: 1rem;
+        }
+      }
+      .icons {
+        ul {
+          display: flex;
+          list-style: none;
+          margin-top: 2rem;
+          padding: 0;
+          @include mediaItemIcons();
+          .github {
+            margin: 0 2rem 0 0;
+            @include iconTag(scale(1.1)); 
+          }
+          .webpage {
+            @include iconWebTag();
+          }
+        }
+      }
+    }
+    img {
+      width: 27rem;
+      height: 18rem;
+      border: 3px solid black;
+      border-bottom: 10px solid black;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px $highlight-text;
+      opacity: 0.6;
+      transition: transform 0.5s;
+      &:hover {
+        filter: drop-shadow(-16px 16px 20px $green-logo);
+        opacity: 1;
+        transform: scale(1.04);
+      }
+      @include mediaItemImg();
+    }
+  }
+  .visit-github {
+    @include displayFlex(center, center);
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    h4 {
+      color: $highlight-text;
+      .highlight {
+        color: $green-logo
+      }
+    }
+    .github {
+      @include iconTag(scale(1.1));
+      margin: 1rem;
+    }
+  }
+}
