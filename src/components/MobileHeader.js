@@ -30,7 +30,7 @@ const MobileHeader = () => {
       <section className={`${header} ${classes.header}`}>
         <div className={classes["logo-section"]}>
           <a
-            href="https://samuel-santos91.github.io/portifolio-web-page"
+            href=""
             aria-label="logo"
           >
             <svg
@@ -55,22 +55,22 @@ const MobileHeader = () => {
       <nav className={`${footer} ${classes.footer}`}>
         <div className={classes["icons-section"]}>
           <div className={`${classes.icons} ${classes.home}`}>
-            <a href="/portifolio-web-page/#intro" aria-label="intro">
+            <a href="#intro" aria-label="intro">
               <AiOutlineHome size={35} />
             </a>
           </div>
           <div className={`${classes.icons} ${classes.about}`}>
-            <a href="/portifolio-web-page/#about" aria-label="about">
+            <a href="#about" aria-label="about">
               <BsPerson size={35} />
             </a>
           </div>
           <div className={`${classes.iconx} ${classes.projects}`}>
-            <a href="/portifolio-web-page/#projects" aria-label="projects">
+            <a href="#projects" aria-label="projects">
               <TbArchive size={35} />
             </a>
           </div>
           <div className={`${classes.icons} ${classes.contact}`}>
-            <a href="/portifolio-web-page/#contact" aria-label="contact">
+            <a href="#contact" aria-label="contact">
               <MdOutlineMail size={35} />
             </a>
           </div>

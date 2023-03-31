@@ -23,7 +23,7 @@ const Header = (props) => {
     <header className={`${header} ${classes.header}`}>
       <div className={classes["logo-section"]}>
         <a
-          href="https://samuel-santos91.github.io/portifolio-web-page"
+          href=""
           aria-label="logo"
         >
           <svg
@@ -41,13 +41,13 @@ const Header = (props) => {
       <div className={classes.nav}>
         <ul className={classes.options}>
           <li className={classes.about}>
-            <a href="/portifolio-web-page/#about">About</a>
+            <a href="#about">About</a>
           </li>
           <li className={classes.projects}>
-            <a href="/portifolio-web-page/#projects">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li className={classes.contact}>
-            <a href="/portifolio-web-page/#contact">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
         <div className={classes.resume}>
