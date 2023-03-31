@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/portifolio-webpage/static/css/main.f0fa0772.css",
+    "main.js": "/portifolio-webpage/static/js/main.9d45eebd.js",
+    "static/media/dictionary.png": "/portifolio-webpage/static/media/dictionary.6f67668191839fa8e341.png",
+    "static/media/foodorder.png": "/portifolio-webpage/static/media/foodorder.f4a7786c54b9928dfe23.png",
+    "static/media/landingpage.png": "/portifolio-webpage/static/media/landingpage.a0af581605daaa85c2c8.png",
+    "static/media/me.jpeg": "/portifolio-webpage/static/media/me.9772a611eb35da7d26e7.jpeg",
+    "static/media/expenseorg.png": "/portifolio-webpage/static/media/expenseorg.d29219732b0b8e851fb2.png",
+    "index.html": "/portifolio-webpage/index.html",
+    "main.f0fa0772.css.map": "/portifolio-webpage/static/css/main.f0fa0772.css.map",
+    "main.9d45eebd.js.map": "/portifolio-webpage/static/js/main.9d45eebd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0fa0772.css",
+    "static/js/main.9d45eebd.js"
+  ]
+}
