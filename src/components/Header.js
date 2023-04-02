@@ -22,10 +22,7 @@ const Header = (props) => {
   return (
     <header className={`${header} ${classes.header}`}>
       <div className={classes["logo-section"]}>
-        <a
-          href=""
-          aria-label="logo"
-        >
+        <a href="" aria-label="logo">
           <svg
             viewBox="0 0 80 80"
             xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +48,7 @@ const Header = (props) => {
           </li>
         </ul>
         <div className={classes.resume}>
-          <a href="resume.pdf" download>
+          <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
             Resume
           </a>
         </div>
