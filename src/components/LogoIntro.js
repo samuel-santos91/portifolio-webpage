@@ -1,7 +1,7 @@
 import classes from "../styles/LogoIntro.module.scss"
 
 const LogoIntro = () => {
-  return (
+  return ( 
     <aside className={classes["logo-animation"]}>
       <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
         <g>

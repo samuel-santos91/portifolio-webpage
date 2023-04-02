@@ -2,7 +2,7 @@
 
 .logo-animation {
   svg {
-    @include positionFixedTop; 
+    @include positionFixedTop;
     z-index: 2;
     height: 100%;
     width: 100%;
@@ -17,7 +17,7 @@
       circle {
         @include stroke;
         fill: $animation-logo-background;
-        animation: draw 4s 1s forwards, shrink 0.2s 4.5s forwards;
+        animation: draw 3s 1s forwards, shrink 0.2s 4.5s forwards;
         animation-timing-function: ease-in-out;
         transform-origin: center;
         @keyframes draw {
@@ -37,13 +37,18 @@
         fill: $green-logo;
         fill-opacity: 0;
         font-size: 0.7rem;
-        animation: contour 5s 1s forwards, fill-in 2s 2s forwards,
-          shrink 0.2s 4.5s forwards;
+        animation: contour 3.5s forwards, fill-in 2s 2s forwards,
+          shrinks 0.2s 4.5s forwards;
         animation-timing-function: ease-in-out;
         transform-origin: center;
         @keyframes contour {
-          to {
+          0% {
+            stroke-dashoffset: 50;
+            stroke-dasharray: 50;
+          }
+          100% {
             stroke-dashoffset: 0;
+            stroke-dasharray: 0;
           }
         }
         @keyframes fill-in {
@@ -51,8 +56,9 @@
             fill-opacity: 1;
           }
         }
-        @keyframes shrink {
+        @keyframes shrinks {
           to {
+            font-size: 0;
             transform: scale(0);
           }
         }

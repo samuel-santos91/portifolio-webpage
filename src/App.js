@@ -16,6 +16,10 @@ const App = () => {
     AOS.init();
   }, []);
 
+  setTimeout(() => {
+    AOS.refresh();
+  }, 500);
+
   //COUNTDOWN TO LOAD INTRO
   const [isVisible, setIsVisible] = useState(false);
   const loadIntro = () => {
