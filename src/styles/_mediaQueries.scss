@@ -51,6 +51,9 @@
   }
 }
 @mixin mediaIconUl() {
+  @media (max-width: 900px) {
+    margin-top: 1rem;
+  }
   @media (max-width: 768px) {
     margin: 2rem 0 2rem 0;
   }
@@ -59,24 +62,6 @@
   @media (max-width: 900px) {
     width: 13rem;
     height: 13rem;
-  }
-  @media (max-width: 768px) {
-    margin: 3rem 0 0 0;
-    width: 17rem;
-    height: 17rem;
-    margin-top: 3.7rem;
-    margin-left: -0.71rem;
-  }
-  @media (max-width: 480px) {
-    width: 14rem;
-    height: 14rem;
-  }
-}
-@mixin mediaAvatar() {
-  @media (max-width: 900px) {
-    width: 13rem;
-    height: 13rem;
-    margin: 0 2rem 2rem 0;
   }
   @media (max-width: 768px) {
     margin: 3rem 0 0 0;
