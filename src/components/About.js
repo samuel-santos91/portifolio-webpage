@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div id="about" className={classes.about}>
       <div className={classes["section-title"]}>
-        <h2 className={classes.section}>About me </h2>
+        <h2 className={classes.section}>About Me </h2>
         <hr />
       </div>
 
