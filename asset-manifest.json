@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/portifolio-webpage/static/css/main.6e8d52cc.css",
-    "main.js": "/portifolio-webpage/static/js/main.f76b54bb.js",
+    "main.js": "/portifolio-webpage/static/js/main.e006bc8e.js",
     "static/media/dictionary.png": "/portifolio-webpage/static/media/dictionary.6f67668191839fa8e341.png",
     "static/media/foodorder.png": "/portifolio-webpage/static/media/foodorder.f4a7786c54b9928dfe23.png",
     "static/media/landingpage.png": "/portifolio-webpage/static/media/landingpage.a0af581605daaa85c2c8.png",
     "static/media/me.jpeg": "/portifolio-webpage/static/media/me.9772a611eb35da7d26e7.jpeg",
     "static/media/tasklist.png": "/portifolio-webpage/static/media/tasklist.73ffff8db0f515fd62f2.png",
+    "static/media/resume.pdf": "/portifolio-webpage/static/media/resume.85fd841eb16a39991ddc.pdf",
     "index.html": "/portifolio-webpage/index.html",
     "main.6e8d52cc.css.map": "/portifolio-webpage/static/css/main.6e8d52cc.css.map",
-    "main.f76b54bb.js.map": "/portifolio-webpage/static/js/main.f76b54bb.js.map"
+    "main.e006bc8e.js.map": "/portifolio-webpage/static/js/main.e006bc8e.js.map"
   },
   "entrypoints": [
     "static/css/main.6e8d52cc.css",
-    "static/js/main.f76b54bb.js"
+    "static/js/main.e006bc8e.js"
   ]
 }
