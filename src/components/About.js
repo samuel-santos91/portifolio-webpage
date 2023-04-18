@@ -147,7 +147,7 @@ const About = () => {
               data-aos-delay="300"
               data-aos-anchor-placement="top-bottom"
             >
-              Sass
+              React.js
             </li>
             <li
               data-aos="fade-up"
@@ -155,7 +155,15 @@ const About = () => {
               data-aos-delay="350"
               data-aos-anchor-placement="top-bottom"
             >
-              React.js
+              TypeScript
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="350"
+              data-aos-anchor-placement="top-bottom"
+            >
+              Sass
             </li>
           </ul>
         </div>

@@ -4,7 +4,7 @@ import { BsGithub } from "react-icons/bs";
 import classes from "../styles/Projects.module.scss";
 import foodOrder from "../images/foodorder.png";
 import dictionary from "../images/dictionary.png";
-import expenses from "../images/expenseorg.png";
+import tasklist from "../images/tasklist.png";
 import landingpage from "../images/landingpage.png";
 
 const Projects = () => {
@@ -139,20 +139,19 @@ const Projects = () => {
 
       <div className={classes["app-name"]}>
         <a
-          href="https://samuel-santos91.github.io/expense-organizer/"
+          href="https://samuel-santos91.github.io/task-list/"
           target="_blank"
           rel="noopener noreferrer"
           data-aos="fade-right"
           data-aos-duration="1200"
         >
-          <img src={expenses} alt="expenses app screenshot" />
+          <img src={tasklist} alt="task list app screenshot" />
         </a>
         <div className={classes.item}>
-          <h3 className={classes.title}>Expenses Organizer</h3>
+          <h3 className={classes.title}>Task Organizer</h3>
           <p className={classes.description}>
-            Application that arranges a list that can be filtered by year and
-            also displays a chart with the proportion spent in each month of
-            that year. Add, edit or delete any item.
+            Application that creates and arranges a list of all the tasks to be
+            completed. Add, edit, delete or mark as completed, any of the items.
           </p>
           <ul className={classes["made-with"]}>
             <li
@@ -168,6 +167,13 @@ const Projects = () => {
               data-aos-duration="1200"
               data-aos-anchor-placement="top-bottom"
             >
+              TypeScript
+            </li>
+            <li
+              data-aos="flip-left"
+              data-aos-duration="1200"
+              data-aos-anchor-placement="top-bottom"
+            >
               Sass
             </li>
           </ul>
@@ -175,7 +181,7 @@ const Projects = () => {
             <ul>
               <li className={classes.github}>
                 <a
-                  href="https://github.com/samuel-santos91/expense-organizer"
+                  href="https://github.com/samuel-santos91/task-list"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -184,7 +190,7 @@ const Projects = () => {
               </li>
               <li className={classes.webpage}>
                 <a
-                  href="https://samuel-santos91.github.io/expense-organizer/"
+                  href="https://samuel-santos91.github.io/task-list/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
