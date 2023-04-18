@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 import { TbArchive } from "react-icons/tb";
 import { MdOutlineMail } from "react-icons/md";
+import { useState, useEffect } from "react";
+import resume from "../docs/resume.pdf"
 import classes from "../styles/MobileHeader.module.scss";
 
 const MobileHeader = () => {
@@ -43,7 +44,7 @@ const MobileHeader = () => {
           </a>
         </div>
         <div className={classes.resume}>
-          <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href={resume} target="_blank" rel="noopener noreferrer">
             Resume
           </a>
         </div>

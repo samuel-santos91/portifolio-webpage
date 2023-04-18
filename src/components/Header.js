@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import resume from "../docs/resume.pdf"
 import classes from "../styles/Header.module.scss";
 
 const Header = (props) => {
@@ -48,7 +49,7 @@ const Header = (props) => {
           </li>
         </ul>
         <div className={classes.resume}>
-          <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href={resume} target="_blank" rel="noopener noreferrer">
             Resume
           </a>
         </div>
