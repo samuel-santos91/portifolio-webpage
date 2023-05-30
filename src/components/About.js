@@ -89,8 +89,9 @@ const About = () => {
             by a passion for leaning new skills and technologies, I have been
             focusing my studies on{" "}
             <span className={classes.highlight}>HTML</span>,{" "}
-            <span className={classes.highlight}>CSS</span> and{" "}
-            <span className={classes.highlight}>Javascript</span>.
+            <span className={classes.highlight}>CSS</span>,{" "}
+            <span className={classes.highlight}>Javascript</span> and{" "}
+            <span className={classes.highlight}>Node.js</span>.
             <br />
             <br /> My goal is to become a{" "}
             <span className={classes.highlight}>Full Stack Developer</span> and
@@ -123,7 +124,7 @@ const About = () => {
               data-aos-delay="150"
               data-aos-anchor-placement="top-bottom"
             >
-              Bootstrap
+              CSS
             </li>
             <li
               data-aos="fade-up"
@@ -131,7 +132,7 @@ const About = () => {
               data-aos-delay="200"
               data-aos-anchor-placement="top-bottom"
             >
-              JavaScript
+              Bootstrap
             </li>
             <li
               data-aos="fade-up"
@@ -139,7 +140,7 @@ const About = () => {
               data-aos-delay="250"
               data-aos-anchor-placement="top-bottom"
             >
-              CSS
+              Sass
             </li>
             <li
               data-aos="fade-up"
@@ -147,7 +148,15 @@ const About = () => {
               data-aos-delay="300"
               data-aos-anchor-placement="top-bottom"
             >
-              React.js
+              Tailwind CSS
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+              data-aos-anchor-placement="top-bottom"
+            >
+              Javascript
             </li>
             <li
               data-aos="fade-up"
@@ -163,7 +172,15 @@ const About = () => {
               data-aos-delay="350"
               data-aos-anchor-placement="top-bottom"
             >
-              Sass
+              React.js
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="350"
+              data-aos-anchor-placement="top-bottom"
+            >
+              Express.js
             </li>
           </ul>
         </div>
